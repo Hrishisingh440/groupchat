@@ -6,7 +6,7 @@ const Filter= require('bad-words')
 const socketio=require('socket.io')
 const app=express()
 const path= require('path')
-const { dirname } = require('path/posix')
+
 const pdf=path.join(__dirname,'../public')
 app.use(express.static(pdf))
 const port=process.env.PORT||3000
